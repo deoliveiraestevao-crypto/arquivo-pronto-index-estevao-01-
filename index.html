@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dinheiro em Bits - Blog de Tecnologia & Finanças</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f6f8;
+                color: #2d3748;
+            }
+
+            /* Barra Superior de Navegação */
+            .navbar {
+                background-color: #080f38;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 15px 0;
+            }
+            .nav-container {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 0 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .logo {
+                color: #ffffff;
+                font-weight: bold;
+                font-size: 1.2rem;
+                text-decoration: none;
+            }
+            .nav-links {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                gap: 20px;
+            }
+            .nav-links a {
+                color: #cbd5e1;
+                text-decoration: none;
+                font-size: 0.9rem;
+                transition: color 0.2s;
+            }
+            .nav-links a:hover {
+                color: #ffffff;
+            }
+
+            /* Cabeçalho Principal */
+            header {
+                background: linear-gradient(135deg, #080f38 0%, #1a2c6d 100%);
+                text-align: center;
+                padding: 50px 20px 80px 20px;
+            }
+            header h1 {
+                margin: 0;
+                font-size: 2.4rem;
+                color: #ffffff;
+                letter-spacing: -0.5px;
+            }
+            /* Subtítulo ajustado para branco absoluto */
+            header p {
+                font-size: 1.1rem;
+                color: #ffffff;
+                margin-top: 10px;
+                font-weight: 300;
+            }
+
+            /* Container dos Artigos */
+            .container {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            main {
+                background-color: #ffffff;
+                margin: -40px auto 50px auto;
+                padding: 45px;
+                border-radius: 12px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            }
+
+            /* Tags de Categoria */
+            .tag {
+                display: inline-block;
+                background-color: #e2e8f0;
+                color: #0b1651;
+                font-size: 0.75rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding: 4px 10px;
+                border-radius: 4px;
+                margin-bottom: 12px;
+                letter-spacing: 0.5px;
+            }
+
+            h2 {
+                color: #0b1651;
+                font-size: 1.4rem;
+                margin-top: 0;
+                margin-bottom: 15px;
+                line-height: 1.3;
+            }
+            p {
+                line-height: 1.75;
+                color: #4a5568;
+                font-size: 1rem;
+            }
+            .post-divider {
+                border: 0;
+                height: 1px;
+                background: #edf2f7;
+                margin: 40px 0;
+            }
+            ul {
+                line-height: 1.8;
+                padding-left: 20px;
+                color: #4a5568;
+            }
+            li {
+                margin-bottom: 10px;
+            }
+
+            /* Rodapé do Post (Autor + Ações) */
+            .post-meta {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 40px;
+                padding-top: 20px;
+                border-top: 1px solid #edf2f7;
+            }
+            .autor-info {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+            .avatar {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #0b1651;
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                font-size: 0.9rem;
+            }
+            .autor-nome {
+                font-weight: bold;
+                font-size: 0.95rem;
+                color: #2d3748;
+                margin: 0;
+            }
+            .autor-cargo {
+                font-size: 0.8rem;
+                color: #718096;
+                margin: 0;
+            }
+            .btn-share {
+                background-color: #f7fafc;
+                border: 1px solid #e2e8f0;
+                padding: 8px 16px;
+                border-radius: 6px;
+                color: #4a5568;
+                font-size: 0.85rem;
+                cursor: pointer;
+                transition: background-color 0.2s;
+            }
+            .btn-share:hover {
+                background-color: #edf2f7;
+            }
+
+            /* Rodapé Principal */
+            footer {
+                background-color: #080f38;
+                color: #a0aec0;
+                text-align: center;
+                padding: 30px 20px;
+                font-size: 0.85rem;
+            }
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="logo">Dinheiro em Bits</a>
+                <ul class="nav-links">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Artigos</a></li>
+                    <li><a href="#">Ferramentas</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header>
+            <div class="container">
+                <h1>Dinheiro em Bits</h1>
+                <p>Seu futuro financeiro começa online.</p>
+            </div>
+        </header>
+
+        <div class="container">
+            <main>
+                <article>
+                    <span class="tag">Monetização</span>
+                    <h2>Por que você ainda não tentou começar a ganhar dinheiro pela internet?</h2>
+                    <p>Ganhar dinheiro com sites exige um nicho claro, tráfego focado em SEO e páginas bem estruturadas. As principais formas de renda são anúncios, afiliados e produtos próprios. A consistência transforma visitantes em uma fonte sólida e duradoura de lucro.</p>
+                    <p>Mas se você quer realmente começar a ganhar dinheiro pela internet, confira no blog completo!</p>
+                </article>
+
+                <hr class="post-divider">
+
+                <article>
+                    <span class="tag">Desenvolvimento Web</span>
+                    <h2>Mini-Aula: Como Criar o Seu Primeiro Site</h2>
+                    <p>Criar um site hoje em dia é muito mais fácil e acessível do que parecia antigamente. A base de toda a Web é construída a partir de três linguagens fundamentais: o <strong>HTML</strong>, que monta a estrutura e os textos; o <strong>CSS</strong>, responsável pelo visual, cores e design; e o <strong>JavaScript</strong>, que dá vida e interatividade à página.</p>
+                    
+                    <p>O primeiro passo para colocar uma página no ar é entender o seu objetivo. Seja para um blog, um portfólio de trabalhos ou uma loja virtual, organizar o conteúdo antes de começar a codificar poupa muito tempo e evita retrabalho na hora do desenvolvimento.</p>
+
+                    <h2>Dicas de Ouro para Criar um Bom Site:</h2>
+                    <ul>
+                        <li><strong>Pense no Visual (Design Limpo):</strong> Evite excesso de elementos e cores que poluem a tela. Uma leitura agradável prende o visitante por mais tempo.</li>
+                        <li><strong>Foco na Responsividade:</strong> Garanta que seu site funcione perfeitamente tanto no computador quanto na tela de um celular.</li>
+                        <li><strong>Cuidado com o Desempenho:</strong> Use imagens leves para que a página carregue rápido e não faça o usuário desistir de esperar.</li>
+                        <li><strong>Escolha um Bom Domínio e Hospedagem:</strong> O domínio é o seu endereço na web (ex: <i>seusite.com</i>) e a hospedagem é a "casa" onde os arquivos do seu site ficam salvos.</li>
+                    </ul>
+                </article>
+
+                <hr class="post-divider">
+
+                <article>
+                    <span class="tag">Otimização</span>
+                    <h2>Como Aperfeiçoar o Seu Site</h2>
+                    <p>Depois de colocar o seu site no ar, o trabalho não para por aí. Para se destacar e manter seus visitantes engajados, é essencial aperfeiçoar continuamente sua página com foco em experiência do usuário, SEO e performance.</p>
+
+                    <h2>Passos para Levar Seu Site ao Próximo Nível:</h2>
+                    <ul>
+                        <li><strong>Otimização para SEO:</strong> Utilize palavras-chave relevantes nos seus títulos e textos para aparecer nas primeiras pesquisas do Google.</li>
+                        <li><strong>Melhore a Experiência do Usuário (UX):</strong> Mantenha a navegação simples e intuitiva.</li>
+                        <li><strong>Analise os Dados (Analytics):</strong> Acompanhe o tempo de permanência e as páginas mais visitadas para entender o que ajustar.</li>
+                        <li><strong>Adicione Segurança (HTTPS):</strong> Mantenha o certificado SSL atualizado para transmitir credibilidade aos usuários.</li>
+                    </ul>
+                </article>
+
+                <hr class="post-divider">
+
+                <article>
+                    <span class="tag">Inovação & IA</span>
+                    <h2>Como Usar IA e Algoritmos para Gerar Receita</h2>
+                    <p>A Inteligência Artificial mudou as regras do jogo. Hoje você pode utilizar ferramentas de IA para automatizar a criação de conteúdo, criar imagens exclusivas e analisar a concorrência em segundos.</p>
+                    <p>Aliar a automação da IA ao entendimento dos algoritmos de busca (Google) e de redes sociais é a combinação perfeita para atrair tráfego qualificado e converter visitas em receita através de vendas diretas ou anúncios de afiliados.</p>
+                </article>
+
+                <div class="post-meta">
+                    <div class="autor-info">
+                        <div class="avatar">EO</div>
+                        <div>
+                            <p class="autor-nome">Estevão de Oliveira</p>
+                            <p class="autor-cargo">Criador de Conteúdo & Dev</p>
+                        </div>
+                    </div>
+                    <button class="btn-share" onclick="alert('Link copiado!')">Compartilhar</button>
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            <p>&copy; Dinheiro em Bits. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>
